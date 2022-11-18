@@ -1,0 +1,39 @@
+{
+  "name": "seinoxygen/laravel-contabilium",
+  "description": "A Laravel wrapper for Contabilium",
+  "keywords": [
+    "laravel",
+    "contabilium"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "company": "",
+      "email": "seinoxygen@hotmail.com",
+      "url": ""
+    }
+  ],
+  "support": {
+    "email": "seinoxygen@hotmail.com"
+  },
+  "require": {
+    "php": "^7.1|^8.0",
+    "laravel/framework": "^6.0|^7.0|^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SeinOxygen\\Contabilium\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SeinOxygen\\Contabilium\\ContabiliumServiceProvider"
+      ],
+      "aliases": {
+        "Contabilium": "SeinOxygen\\Contabilium\\Facades\\Contabilium"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
